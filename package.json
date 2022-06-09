@@ -1,0 +1,45 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
+    "@material-ui/core": "4.9.8",
+    "@material-ui/icons": "4.9.1",
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "4.17.1",
+    "express-jwt": "5.3.1",
+    "formidable": "1.2.2",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "3.5.5",
+    "mongoose": "^6.2.10",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-hot-loader": "^4.13.0",
+    "react-router": "5.1.2",
+    "react-router-dom": "5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "8.1.0",
+    "file-loader": "6.0.0",
+    "nodemon": "2.0.2",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-middleware": "^5.3.1",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-node-externals": "1.7.2"
+  }
+}
